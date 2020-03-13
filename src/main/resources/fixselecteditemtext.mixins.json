@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "tfar.fixselecteditemtext.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "fixselecteditemtext.refmap.json",
+  "mixins": [
+  ],
+  "client": [
+    "IngameGuiMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8"
+}
