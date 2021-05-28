@@ -11,9 +11,9 @@ import tfar.fixselecteditemtext.FixSelectedItemText;
 public class IngameGuiMixin {
 	@Shadow protected int scaledHeight;
 
-	@ModifyVariable(method = "renderSelectedItem",
+	@ModifyVariable(method = "renderItemName",
 					at = @At(value = "INVOKE", target = "Lnet/minecraft/client/multiplayer/PlayerController;shouldDrawHUD()Z")
-					,ordinal = 1)
+					,ordinal = 2)
 	private int fixOffset(int old) {
 		return FixSelectedItemText.fix(old,scaledHeight);
 	}
